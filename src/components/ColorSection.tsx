@@ -51,7 +51,7 @@ export function ColorSection() {
 
   return (
     <div className="space-y-4 md:space-y-8 w-[98vw] md:w-full md:max-w-screen-2xl mx-auto">
-      <GlassCard className="p-3 md:p-12" delay={0.1}>
+      <GlassCard className="p-6 md:p-12" delay={0.1}>
         <div className="space-y-6">
           <div>
             <h2 className="text-gray-900 mb-2 text-[44px] font-bold m-[0px]">Colours</h2>
@@ -99,7 +99,7 @@ export function ColorSection() {
         ))}
       </div>
 
-      <GlassCard className="p-3 md:p-12" delay={0.4}>
+      <GlassCard className="p-6 md:p-12" delay={0.4}>
         <div className="space-y-6">
           <div>
             <h2 className="text-gray-900 mb-2 text-[44px] font-bold m-[0px]">Brand Gradients</h2>
@@ -164,7 +164,7 @@ export function ColorSection() {
         </div>
       </GlassCard>
 
-      <GlassCard className="p-3 md:p-12" delay={0.6}>
+      <GlassCard className="p-6 md:p-12" delay={0.6}>
         <div className="space-y-6">
           <div>
             <h2 className="text-gray-900 mb-2 text-[44px] font-bold m-[0px]">Text & Graphics Combinations</h2>
@@ -241,7 +241,7 @@ export function ColorSection() {
         </div>
       </GlassCard>
 
-      <GlassCard className="p-3 md:p-12" delay={0.7}>
+      <GlassCard className="p-6 md:p-12" delay={0.7}>
         <div className="space-y-6">
           <div>
             <h2 className="text-gray-900 mb-2 text-[44px] font-bold m-[0px]">Exhibition Space Colours</h2>
@@ -303,7 +303,7 @@ export function ColorSection() {
         </div>
       </GlassCard>
 
-      <GlassCard className="p-3 md:p-12" delay={0.8}>
+      <GlassCard className="p-6 md:p-12" delay={0.8}>
         <div className="space-y-6">
           <div>
             <h2 className="text-gray-900 mb-2 text-[44px] font-bold m-[0px]">Colour Application Guidelines</h2>

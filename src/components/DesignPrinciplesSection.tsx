@@ -44,7 +44,7 @@ export function DesignPrinciplesSection() {
 
   return (
     <div className="space-y-8">
-      <GlassCard className="p-12" delay={0.1}>
+      <GlassCard className="p-6 md:p-12" delay={0.1}>
         <div className="space-y-6">
           <div>
             <p className="text-sm tracking-wide opacity-60 uppercase mb-2">Foundation</p>
@@ -67,7 +67,7 @@ export function DesignPrinciplesSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + index * 0.1 }}
             >
-              <GlassCard className="p-8 h-full" delay={0}>
+              <GlassCard className="p-6 md:p-8 h-full" delay={0}>
                 <div className="space-y-4">
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${principle.color} flex items-center justify-center shadow-lg`}>
                     <Icon className="w-7 h-7 text-white" />
@@ -85,7 +85,7 @@ export function DesignPrinciplesSection() {
         })}
       </div>
 
-      <GlassCard className="p-12" delay={0.8}>
+      <GlassCard className="p-6 md:p-12" delay={0.8}>
         <div className="space-y-6">
           <div>
             <p className="text-sm tracking-wide opacity-60 uppercase mb-2">Application</p>

@@ -1,11 +1,15 @@
-import { GlassCard } from "./GlassCard";
+import { GlassCard } from "././GlassCard";
 import { motion } from "motion/react";
+import layoutExample1 from "figma:asset/03b9170f77286e153cba358af9f4c7695ffd4b61.png";
+import layoutExample2 from "figma:asset/34d61eee6646c4a9acbd15cf1b0d8b244dde06d3.png";
+import layoutExample3 from "figma:asset/e9fe4549c741b61f4119952e76b03e5ba5b04717.png";
+import layoutAnnotated from "figma:asset/9e0f85a738fb5f46a288fc0e51714a29a4ccb523.png";
 
 export function ComponentsSection() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <GlassCard className="p-12" delay={0.1}>
+      <GlassCard className="p-6 md:p-12" delay={0.1}>
         <div className="space-y-6">
           <div>
             <p className="text-sm tracking-wide opacity-60 uppercase mb-2">Layout</p>
@@ -18,7 +22,7 @@ export function ComponentsSection() {
       </GlassCard>
 
       {/* Text Placement Guidelines */}
-      <GlassCard className="p-12" delay={0.2}>
+      <GlassCard className="p-6 md:p-12" delay={0.2}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px] mb-2">Text Placement Guidelines</h3>
@@ -46,13 +50,13 @@ export function ComponentsSection() {
                 <tbody className="divide-y divide-gray-200">
                   <tr>
                     <td className="p-4 text-gray-900">Logos Baseline</td>
-                    <td className="p-4 text-gray-900 font-medium">2000mm</td>
+                    <td className="p-4 text-gray-900 font-medium">2,000mm</td>
                     <td className="p-4 text-gray-700">Branding elements</td>
                     <td className="p-4 text-gray-600 text-sm">Top of wall, high visibility</td>
                   </tr>
                   <tr>
                     <td className="p-4 text-gray-900">Max Height for Titles</td>
-                    <td className="p-4 text-gray-900 font-medium">1900mm</td>
+                    <td className="p-4 text-gray-900 font-medium">1,900mm</td>
                     <td className="p-4 text-gray-700">Display, Zone Title</td>
                     <td className="p-4 text-gray-600 text-sm">Upper limit for readability</td>
                   </tr>
@@ -61,7 +65,7 @@ export function ComponentsSection() {
                       Max Height for Body Text
                       <span className="ml-2 inline-block px-2 py-0.5 bg-blue-500 text-white text-xs rounded">Eye Level</span>
                     </td>
-                    <td className="p-4 text-gray-900 font-medium">1500mm</td>
+                    <td className="p-4 text-gray-900 font-medium">1,500mm</td>
                     <td className="p-4 text-gray-700">Product Title, Header, Body</td>
                     <td className="p-4 text-gray-600 text-sm">Optimal for standing visitors</td>
                   </tr>
@@ -70,13 +74,13 @@ export function ComponentsSection() {
                       Min Height for Body Text
                       <span className="ml-2 inline-block px-2 py-0.5 bg-green-600 text-white text-xs rounded">Accessible</span>
                     </td>
-                    <td className="p-4 text-gray-900 font-medium">1200mm</td>
+                    <td className="p-4 text-gray-900 font-medium">1,200mm</td>
                     <td className="p-4 text-gray-700">Product Title, Header, Body</td>
                     <td className="p-4 text-gray-600 text-sm">Minimum for wheelchair users</td>
                   </tr>
                   <tr>
                     <td className="p-4 text-gray-900">Mid Height for QR Codes</td>
-                    <td className="p-4 text-gray-900 font-medium">1050mm</td>
+                    <td className="p-4 text-gray-900 font-medium">1,050mm</td>
                     <td className="p-4 text-gray-700">Interactive elements</td>
                     <td className="p-4 text-gray-600 text-sm">Easy reach for all users</td>
                   </tr>
@@ -95,18 +99,18 @@ export function ComponentsSection() {
             <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6">
               <h4 className="text-gray-900 text-[18px] mb-4">Standing Visitors</h4>
               <ul className="space-y-2 text-gray-700 text-sm">
-                <li>• Average eye level: ~1500mm (comfortable reading zone)</li>
-                <li>• Titles can be placed up to 1900mm for visual hierarchy</li>
-                <li>• Main content should be between 1200-1500mm</li>
+                <li>• Average eye level: ~1,500mm (comfortable reading zone)</li>
+                <li>• Titles can be placed up to 1,900mm for visual hierarchy</li>
+                <li>• Main content should be between 1,200-1,500mm</li>
               </ul>
             </div>
 
             <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6">
               <h4 className="text-gray-900 text-[18px] mb-4">Wheelchair Users</h4>
               <ul className="space-y-2 text-gray-700 text-sm">
-                <li>• Average eye level: ~1200mm (seated position)</li>
-                <li>• All body text must be readable from 1200mm minimum</li>
-                <li>• Interactive elements should be within 760-1200mm range</li>
+                <li>• Average eye level: ~1,200mm (seated position)</li>
+                <li>• All body text must be readable from 1,200mm minimum</li>
+                <li>• Interactive elements should be within 760-1,200mm range</li>
               </ul>
             </div>
           </div>
@@ -116,19 +120,19 @@ export function ComponentsSection() {
             <div className="space-y-3">
               <div className="flex justify-between items-start py-2 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">Display, Zone Title:</span>
-                <span className="text-gray-600 text-sm text-right">Position baseline between 1500-1900mm (viewable from distance)</span>
+                <span className="text-gray-600 text-sm text-right">Position baseline between 1,500-1,900mm (viewable from distance)</span>
               </div>
               <div className="flex justify-between items-start py-2 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">Product Title:</span>
-                <span className="text-gray-600 text-sm text-right">Position baseline between 1400-1500mm (optimal eye level)</span>
+                <span className="text-gray-600 text-sm text-right">Position baseline between 1,400-1,500mm (optimal eye level)</span>
               </div>
               <div className="flex justify-between items-start py-2 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">Header, Body:</span>
-                <span className="text-gray-600 text-sm text-right">Position between 1200-1500mm (accessible to all)</span>
+                <span className="text-gray-600 text-sm text-right">Position between 1,200-1,500mm (accessible to all)</span>
               </div>
               <div className="flex justify-between items-start py-2">
                 <span className="text-gray-700 font-medium">Caption:</span>
-                <span className="text-gray-600 text-sm text-right">Position between 1200-1400mm (close reading height)</span>
+                <span className="text-gray-600 text-sm text-right">Position between 1,200-1,400mm (close reading height)</span>
               </div>
             </div>
           </div>
@@ -136,7 +140,7 @@ export function ComponentsSection() {
       </GlassCard>
 
       {/* Layout Best Practices */}
-      <GlassCard className="p-12" delay={0.3}>
+      <GlassCard className="p-6 md:p-12" delay={0.3}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px]">Layout Best Practices</h3>
@@ -150,7 +154,7 @@ export function ComponentsSection() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
-                    <span>Follow text placement heights (1200-1500mm for body text)</span>
+                    <span>Follow text placement heights (1,200-1,500mm for body text)</span>
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
@@ -162,7 +166,7 @@ export function ComponentsSection() {
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
-                    <span>Position QR codes at 1050mm for universal access</span>
+                    <span>Position QR codes at 1,050mm for universal access</span>
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
@@ -185,7 +189,7 @@ export function ComponentsSection() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-red-400 flex-shrink-0 mt-1">✗</span>
-                    <span>Don't place body text above 1500mm or below 1200mm</span>
+                    <span>Don't place body text above 1,500mm or below 1,200mm</span>
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-red-400 flex-shrink-0 mt-1">✗</span>
@@ -209,6 +213,115 @@ export function ComponentsSection() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </GlassCard>
+
+      {/* Layout Examples */}
+      <GlassCard className="p-6 md:p-12" delay={0.4}>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-gray-900 text-[32px] mb-2">Layout Examples</h3>
+            <p className="text-gray-600">Panel composition examples showing proper use of typography styles and character limits</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden"
+            >
+              <div className="p-6">
+                <h4 className="text-gray-900 font-medium mb-2">Single Column Layout</h4>
+                <p className="text-sm text-gray-600">Standard panel with Product Title, Header, Body, and supporting media elements</p>
+              </div>
+              <img 
+                src={layoutExample1} 
+                alt="Single column layout example" 
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden"
+            >
+              <div className="p-6">
+                <h4 className="text-gray-900 font-medium mb-2">Two Column Layout</h4>
+                <p className="text-sm text-gray-600">Extended content panel with Body text split across two columns (max 1,500 chars)</p>
+              </div>
+              <img 
+                src={layoutExample2} 
+                alt="Two column layout example" 
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden"
+            >
+              <div className="p-6">
+                <h4 className="text-gray-900 font-medium mb-2">Mixed Layout</h4>
+                <p className="text-sm text-gray-600">Flexible arrangement with text and multiple interactive elements</p>
+              </div>
+              <img 
+                src={layoutExample3} 
+                alt="Mixed layout example" 
+                className="w-full h-auto"
+              />
+            </motion.div>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-2xl p-8">
+            <h4 className="text-gray-900 mb-4">Key Principles</h4>
+            <ul className="space-y-2 text-gray-700 text-sm">
+              <li>• Respect character limits: Product Title (max 3 lines; 80 chars), Header (max 5 lines; 135 chars)</li>
+              <li>• Body text: Single column max 750 chars, two columns max 1,500 chars (both max 17 lines)</li>
+              <li>• Logo marks always positioned top-right at 2,000mm baseline</li>
+              <li>• Interactive elements (iPads, QR codes) positioned within accessible heights</li>
+            </ul>
+          </div>
+        </div>
+      </GlassCard>
+
+      {/* Annotated Layout Example */}
+      <GlassCard className="p-6 md:p-12" delay={0.5}>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-gray-900 text-[32px] mb-2">Annotated Layout Example</h3>
+            <p className="text-gray-600">Detailed panel composition with dimensions and placement guidelines</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden"
+            >
+              <img 
+                src={layoutAnnotated} 
+                alt="Annotated layout example showing 1200mm width and 2400mm height panel with GatherSG content" 
+                className="w-full h-auto max-h-[600px] object-contain"
+              />
+            </motion.div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-8">
+              <h4 className="text-gray-900 mb-4">Annotation Notes</h4>
+              <ul className="space-y-2 text-gray-700 text-sm">
+                <li>• Standard panel dimensions: 1,200mm width × 2,400mm height</li>
+                <li>• Logo mark positioned top-right at 2,000mm baseline height</li>
+                <li>• Product Title (GatherSG) uses approved style (96/120, Medium 500)</li>
+                <li>• Header text follows 5-line maximum guideline (60/75, Regular 400)</li>
+                <li>• Two-column body text layout maintains readability (max 1,500 chars total)</li>
+              </ul>
             </div>
           </div>
         </div>

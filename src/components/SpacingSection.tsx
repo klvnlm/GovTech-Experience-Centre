@@ -6,7 +6,7 @@ export function SpacingSection() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <GlassCard className="p-12" delay={0.1}>
+      <GlassCard className="p-6 md:p-12" delay={0.1}>
         <div className="space-y-6">
           <div>
             <p className="text-sm tracking-wide opacity-60 uppercase mb-2">Spatial Guidelines</p>
@@ -20,19 +20,18 @@ export function SpacingSection() {
       </GlassCard>
 
       {/* Viewing Distances */}
-      <GlassCard className="p-12" delay={0.2}>
+      <GlassCard className="p-6 md:p-12" delay={0.2}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px] mb-2">Viewing Distances</h3>
             <p className="text-gray-600">Minimum distances from wall to allow comfortable viewing</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { distance: "914mm", type: "Small displays & graphics", dimension: "Under 610mm dimension" },
-              { distance: "1524mm", type: "Medium displays", dimension: "610-1220mm dimension" },
-              { distance: "2438mm", type: "Large displays", dimension: "1220-1830mm dimension" },
-              { distance: "3658mm", type: "Monumental installations", dimension: "Over 1830mm dimension" },
+              { distance: "800mm", type: "Wall Panels", dimension: "Text panels & printed graphics" },
+              { distance: "1,200mm", type: "Screens on Wall Panels", dimension: "Digital displays on walls" },
+              { distance: "2,000mm", type: "Projection Screens", dimension: "Large format projections" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -57,7 +56,7 @@ export function SpacingSection() {
       </GlassCard>
 
       {/* Circulation & Accessibility */}
-      <GlassCard className="p-12" delay={0.3}>
+      <GlassCard className="p-6 md:p-12" delay={0.3}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px] mb-2">Circulation & Accessibility</h3>
@@ -73,7 +72,7 @@ export function SpacingSection() {
                   <TrendingUp className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h5 className="text-gray-900 text-[20px] mb-2">Minimum Width: 1524mm</h5>
+                  <h5 className="text-gray-900 text-[20px] mb-2">Minimum Width: 1,550mm</h5>
                   <p className="text-gray-600">Required for wheelchair passage and turning radius</p>
                 </div>
               </div>
@@ -83,7 +82,7 @@ export function SpacingSection() {
                   <Repeat className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
-                  <h5 className="text-gray-900 text-[20px] mb-2">Comfortable Width: 2438-3048mm</h5>
+                  <h5 className="text-gray-900 text-[20px] mb-2">Comfortable Width: 2,400-3,000mm</h5>
                   <p className="text-gray-600">Allows two-way traffic and comfortable viewing distance (suitable for low-traffic environments)</p>
                 </div>
               </div>
@@ -99,7 +98,7 @@ export function SpacingSection() {
       </GlassCard>
 
       {/* Lighting Zones */}
-      <GlassCard className="p-12" delay={0.4}>
+      <GlassCard className="p-6 md:p-12" delay={0.4}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px] mb-2">Lighting Zones</h3>
@@ -159,7 +158,7 @@ export function SpacingSection() {
       </GlassCard>
 
       {/* Interactive Display Zones */}
-      <GlassCard className="p-12" delay={0.5}>
+      <GlassCard className="p-6 md:p-12" delay={0.5}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px] mb-2">Interactive Display Zones</h3>
@@ -171,10 +170,10 @@ export function SpacingSection() {
               <h4 className="text-gray-900 text-[20px] mb-6">Touchscreen Mounting</h4>
               <div className="space-y-4">
                 {[
-                  { label: "Screen centre height", value: "1050mm" },
-                  { label: "Accessible height range", value: "900-1200mm" },
+                  { label: "Screen centre height", value: "1,050mm" },
+                  { label: "Accessible height range", value: "900-1,200mm" },
                   { label: "Tilt angle", value: "10-15° from vertical" },
-                  { label: "Clearance in front", value: "1524mm minimum" },
+                  { label: "Clearance in front", value: "1,524mm minimum" },
                 ].map((item, index) => (
                   <div key={index} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
                     <span className="text-gray-700">{item.label}</span>
@@ -191,7 +190,7 @@ export function SpacingSection() {
                   { label: "Table height", value: "760-810mm" },
                   { label: "Wheelchair clearance", value: "685mm minimum" },
                   { label: "Table depth", value: "600-750mm" },
-                  { label: "Space around table", value: "1524mm clearance" },
+                  { label: "Space around table", value: "1,524mm clearance" },
                 ].map((item, index) => (
                   <div key={index} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
                     <span className="text-gray-700">{item.label}</span>
@@ -205,7 +204,7 @@ export function SpacingSection() {
       </GlassCard>
 
       {/* Spatial Best Practices */}
-      <GlassCard className="p-12" delay={0.6}>
+      <GlassCard className="p-6 md:p-12" delay={0.6}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px]">Spatial Best Practices</h3>
@@ -235,7 +234,7 @@ export function SpacingSection() {
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
-                    <span>Maintain minimum pathway widths (1524mm for accessibility)</span>
+                    <span>Maintain minimum pathway widths (1,524mm for accessibility)</span>
                   </li>
                   <li className="flex items-start gap-3 text-white">
                     <span className="text-green-400 flex-shrink-0 mt-1">✓</span>
