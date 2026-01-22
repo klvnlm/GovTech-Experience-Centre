@@ -6,7 +6,7 @@ export function TypographySection() {
     {
       category: "GALLERY",
       styleName: "Display",
-      size: "960/960",
+      size: "800/960",
       weight: "Medium (500)",
       charLimit: "—",
       usage: "Main entrance only",
@@ -14,8 +14,17 @@ export function TypographySection() {
     },
     {
       category: "GALLERY",
+      styleName: "Zone Marking",
+      size: "360/360",
+      weight: "Medium (500)",
+      charLimit: "—",
+      usage: "Zone numbers",
+      color: "bg-purple-500"
+    },
+    {
+      category: "GALLERY",
       styleName: "Zone Title",
-      size: "192/210",
+      size: "160/168",
       weight: "Medium (500)",
       charLimit: "—",
       usage: "Zone identifiers",
@@ -24,7 +33,7 @@ export function TypographySection() {
     {
       category: "PRODUCT",
       styleName: "Product Title",
-      size: "96/120",
+      size: "80/96",
       weight: "Medium (500)",
       charLimit: "Max 3 lines; 60 chars",
       usage: "Product panel titles",
@@ -33,20 +42,20 @@ export function TypographySection() {
     {
       category: "PRODUCT",
       styleName: "Product Header",
-      size: "48/60",
+      size: "40/48",
       weight: "Regular (400)",
-      charLimit: "Max 5 lines; 135 chars",
+      charLimit: "Max 3 lines; 90–110 chars",
       usage: "Product introductions",
-      color: "bg-gray-300"
+      color: "bg-gray-700"
     },
     {
       category: "PRODUCT",
       styleName: "Body",
-      size: "24/30",
+      size: "20/24",
       weight: "Regular (400)",
-      charLimit: "Max 17 lines; 2 col 1,500 chars / 1 col 750 chars",
+      charLimit: "Max 25 lines; 2 col 1,200 chars / 1 col 700 chars",
       usage: "Primary body text",
-      color: "bg-gray-300"
+      color: "bg-gray-700"
     },
     {
       category: "PRODUCT",
@@ -55,13 +64,13 @@ export function TypographySection() {
       weight: "Regular (400)",
       charLimit: "—",
       usage: "Captions, metadata",
-      color: "bg-gray-300"
+      color: "bg-gray-700"
     }
   ];
 
   const dos = [
-    "Use only the 6 approved text styles (Display, Zone Title, Product Title, Product Header, Body, Caption)",
-    "Follow character limits: Product Title (max 3 lines; 60 chars), Product Header (max 5 lines; 135 chars), Body (max 17 lines; 2 col 1,500 chars / 1 col 750 chars)",
+    "Use only the 6 approved text styles (Display, Zone Marking, Zone Title, Product Title, Product Header, Body, Caption)",
+    "Follow character limits: Product Title (max 3 lines; 60 chars), Product Header (max 3 lines; 90–110 chars), Body (max 25 lines; 2 col 1,200 chars / 1 col 700 chars)",
     "Refer to Layout section for text placement heights on walls and panels",
     "Use Neue Haas Unica Pro exclusively across all materials",
     "Maintain exact size/line-height ratios as specified"
@@ -76,7 +85,7 @@ export function TypographySection() {
   ];
 
   return (
-    <div className="space-y-4 md:space-y-8 md:pt-0 w-[98vw] md:w-full md:max-w-screen-2xl mx-auto mt-[32px] mr-[-9px] mb-[0px] ml-[0px] pt-[0px] pr-[10px] pb-[0px] pl-[0px]">
+    <div className="space-y-4 md:space-y-8 md:pt-0 w-full md:max-w-screen-2xl mx-auto mt-[32px] mr-[-9px] mb-[0px] ml-[0px] pt-[0px] pr-[10px] pb-[0px] pl-[0px]">
       {/* Font Weights */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         <GlassCard className="p-6 md:p-10" delay={0.1}>
@@ -104,7 +113,7 @@ export function TypographySection() {
 
       <GlassCard className="p-6 md:p-10" delay={0.3}>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 bg-gray-100 rounded-lg px-4 py-3">
+          <p className="text-sm text-gray-600 bg-gray-100 dark:bg-gray-900/60 rounded-lg px-4 py-3">
             <span className="font-medium">Note:</span> Neue Haas Unica Pro is the exclusive typeface for the GovTech Experience Centre. Do not substitute with other typefaces or create additional text styles.
           </p>
         </div>
@@ -170,7 +179,7 @@ export function TypographySection() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
+              <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
                 <h4 className="text-gray-900 mb-3">Exhibition Advantages</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Clear at varying distances (1-10m)</li>
@@ -180,7 +189,7 @@ export function TypographySection() {
                 </ul>
               </div>
 
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
+              <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
                 <h4 className="text-gray-900 mb-3">Typographic Features</h4>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Geometric precision for all scales</li>

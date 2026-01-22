@@ -14,12 +14,9 @@ export function GlassCard({ children, className = "", gradient, delay = 0 }: Gla
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-      className={`relative rounded-[2rem] backdrop-blur-2xl border border-white/20 shadow-xl overflow-hidden ${className}`}
-      style={{
-        background: gradient || "rgba(255, 255, 255, 0.7)",
-      }}
+      className={`relative rounded-[2rem] backdrop-blur-2xl border border-white/20 dark:border-gray-700/30 shadow-xl overflow-hidden bg-white/70 dark:bg-gray-800/70 transition-colors ${className}`}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent dark:from-white/5 dark:via-transparent dark:to-transparent pointer-events-none" />
       <div className="relative z-10">{children}</div>
     </motion.div>
   );

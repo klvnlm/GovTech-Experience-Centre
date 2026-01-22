@@ -36,14 +36,13 @@ export function ComponentsSection() {
             </p>
           </div>
 
-          <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden">
+          <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-gray-100/50 border-b border-gray-200">
+                <thead className="bg-gray-100/50 dark:bg-gray-800/50 border-b border-gray-200 dark:border-gray-700">
                   <tr>
                     <th className="text-left p-4 text-gray-600 text-sm uppercase tracking-wide">Element Type</th>
                     <th className="text-left p-4 text-gray-600 text-sm uppercase tracking-wide">Height (MM)</th>
-                    <th className="text-left p-4 text-gray-600 text-sm uppercase tracking-wide">Recommended For</th>
                     <th className="text-left p-4 text-gray-600 text-sm uppercase tracking-wide">Notes</th>
                   </tr>
                 </thead>
@@ -51,14 +50,12 @@ export function ComponentsSection() {
                   <tr>
                     <td className="p-4 text-gray-900">Product Title Baseline</td>
                     <td className="p-4 text-gray-900 font-medium">2,000mm</td>
-                    <td className="p-4 text-gray-700">Product Title</td>
                     <td className="p-4 text-gray-600 text-sm">First line sits on this baseline</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-gray-900">Max Height for Titles</td>
-                    <td className="p-4 text-gray-900 font-medium">1,900mm</td>
-                    <td className="p-4 text-gray-700">Display, Zone Title</td>
-                    <td className="p-4 text-gray-600 text-sm">Upper limit for readability</td>
+                    <td className="p-4 text-gray-900">Max Height for Product Headers</td>
+                    <td className="p-4 text-gray-900 font-medium">1,700mm</td>
+                    <td className="p-4 text-gray-600 text-sm">Upper limit for product headers</td>
                   </tr>
                   <tr className="bg-blue-50/30">
                     <td className="p-4 text-gray-900">
@@ -66,7 +63,6 @@ export function ComponentsSection() {
                       <span className="ml-2 inline-block px-2 py-0.5 bg-blue-500 text-white text-xs rounded">Eye Level</span>
                     </td>
                     <td className="p-4 text-gray-900 font-medium">1,500mm</td>
-                    <td className="p-4 text-gray-700">Product Title, Header, Body</td>
                     <td className="p-4 text-gray-600 text-sm">Optimal for standing visitors</td>
                   </tr>
                   <tr className="bg-green-50/30">
@@ -75,13 +71,11 @@ export function ComponentsSection() {
                       <span className="ml-2 inline-block px-2 py-0.5 bg-green-600 text-white text-xs rounded">Accessible</span>
                     </td>
                     <td className="p-4 text-gray-900 font-medium">900mm</td>
-                    <td className="p-4 text-gray-700">Product Title, Header, Body</td>
                     <td className="p-4 text-gray-600 text-sm">Minimum for wheelchair users</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-gray-900">Mid Height for QR Codes</td>
+                    <td className="p-4 text-gray-900">Mid Height for Mobile Phones, Tablets & QR Codes</td>
                     <td className="p-4 text-gray-900 font-medium">1,050mm</td>
-                    <td className="p-4 text-gray-700">Interactive elements</td>
                     <td className="p-4 text-gray-600 text-sm">Easy reach for all users</td>
                   </tr>
                 </tbody>
@@ -90,16 +84,16 @@ export function ComponentsSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6">
+            <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-6">
               <h4 className="text-gray-900 text-[18px] mb-4">Standing Visitors</h4>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Average eye level: ~1,500mm (comfortable reading zone)</li>
-                <li>• Titles can be placed up to 1,900mm for visual hierarchy</li>
+                <li>• Headers can be placed up to 1,700mm for visual hierarchy</li>
                 <li>• Main content should be between 900-1,500mm</li>
               </ul>
             </div>
 
-            <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6">
+            <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-6">
               <h4 className="text-gray-900 text-[18px] mb-4">Wheelchair Users</h4>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Average eye level: ~1,200mm (seated position)</li>
@@ -108,25 +102,58 @@ export function ComponentsSection() {
               </ul>
             </div>
           </div>
+        </div>
+      </GlassCard>
 
-          <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6">
-            <h4 className="text-gray-900 text-[18px] mb-4">Recommended Text Placement by Style</h4>
-            <div className="space-y-3">
-              <div className="flex justify-between items-start py-2 border-b border-gray-200">
-                <span className="text-gray-700 font-medium">Display, Zone Title:</span>
-                <span className="text-gray-600 text-sm text-right">Position baseline between 1,500-1,900mm (viewable from distance)</span>
+      {/* Guidelines for Product Panels */}
+      <GlassCard className="p-6 md:p-12" delay={0.3}>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-gray-900 text-[32px] mb-2">Guidelines for Product Panels</h3>
+            <p className="text-gray-600">Five approved panel layouts with character limits and interactive element configurations</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-8">
+            <h4 className="text-gray-900 mb-4">Panel Configuration Rules</h4>
+            <div className="space-y-4">
+              <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                <h5 className="text-gray-900 font-medium mb-3">Product Title Character Limits</h5>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li>• <span className="font-medium">Maximum:</span> 3 lines</li>
+                  <li>• Applies to all 5 panel options</li>
+                </ul>
               </div>
-              <div className="flex justify-between items-start py-2 border-b border-gray-200">
-                <span className="text-gray-700 font-medium">Product Title:</span>
-                <span className="text-gray-600 text-sm text-right">Position baseline between 1,400-1,500mm (optimal eye level)</span>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 1</h5>
+                  <p className="text-sm text-gray-700 mb-2">Text Only</p>
+                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 1,200 characters</p>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 2</h5>
+                  <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Video)</p>
+                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 900 characters</p>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 3</h5>
+                  <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Interaction)</p>
+                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 900 characters</p>
+                </div>
+
+                <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 4</h5>
+                  <p className="text-sm text-gray-700 mb-2">Text + 2 iPads (Video or Interaction)</p>
+                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 800 characters</p>
+                </div>
               </div>
-              <div className="flex justify-between items-start py-2 border-b border-gray-200">
-                <span className="text-gray-700 font-medium">Header, Body:</span>
-                <span className="text-gray-600 text-sm text-right">Position between 900-1,500mm (accessible to all)</span>
-              </div>
-              <div className="flex justify-between items-start py-2">
-                <span className="text-gray-700 font-medium">Caption:</span>
-                <span className="text-gray-600 text-sm text-right">Position between 900-1,400mm (close reading height)</span>
+
+              <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-sm rounded-xl p-6">
+                <h5 className="text-gray-900 font-medium mb-3">Panel Option 5</h5>
+                <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Video) + 1 iPad (Interaction)</p>
+                <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 600 characters</p>
               </div>
             </div>
           </div>
@@ -134,7 +161,7 @@ export function ComponentsSection() {
       </GlassCard>
 
       {/* Layout Best Practices */}
-      <GlassCard className="p-6 md:p-12" delay={0.3}>
+      <GlassCard className="p-6 md:p-12" delay={0.45}>
         <div className="space-y-8">
           <div>
             <h3 className="text-gray-900 text-[32px]">Layout Best Practices</h3>
@@ -206,79 +233,6 @@ export function ComponentsSection() {
                     <span>Don't mix metric and imperial measurements</span>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </GlassCard>
-
-      {/* Guidelines for Product Panels */}
-      <GlassCard className="p-6 md:p-12" delay={0.45}>
-        <div className="space-y-8">
-          <div>
-            <h3 className="text-gray-900 text-[32px] mb-2">Guidelines for Product Panels</h3>
-            <p className="text-gray-600">Five approved panel layouts with character limits and interactive element configurations</p>
-          </div>
-
-          <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl overflow-hidden">
-            <img 
-              src={panelGuidelines} 
-              alt="Guidelines for Product Panels showing 5 panel options" 
-              className="w-full h-auto"
-            />
-          </div>
-
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-8">
-            <h4 className="text-gray-900 mb-4">Panel Configuration Rules</h4>
-            <div className="space-y-4">
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                <h5 className="text-gray-900 font-medium mb-3">Product Title Character Limits</h5>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• <span className="font-medium">Maximum:</span> 3 lines, 60 characters</li>
-                  <li>• <span className="font-medium">Ideal range:</span> 45–55 characters</li>
-                  <li>• Applies to all 5 panel options</li>
-                </ul>
-              </div>
-
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                <h5 className="text-gray-900 font-medium mb-3">Product Sub-header Character Limits</h5>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• <span className="font-medium">Maximum:</span> 3 lines, 118 characters</li>
-                  <li>• <span className="font-medium">Ideal range:</span> 90–110 characters</li>
-                  <li>• Applies to all 5 panel options</li>
-                </ul>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 1</h5>
-                  <p className="text-sm text-gray-700 mb-2">Text Only</p>
-                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 1,100 characters</p>
-                </div>
-
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 2</h5>
-                  <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Video)</p>
-                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 900 characters</p>
-                </div>
-
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 3</h5>
-                  <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Interaction)</p>
-                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 900 characters</p>
-                </div>
-
-                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                  <h5 className="text-gray-900 font-medium mb-3">Panel Option 4</h5>
-                  <p className="text-sm text-gray-700 mb-2">Text + 2 iPads (Video or Interaction)</p>
-                  <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 700 characters</p>
-                </div>
-              </div>
-
-              <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6">
-                <h5 className="text-gray-900 font-medium mb-3">Panel Option 5</h5>
-                <p className="text-sm text-gray-700 mb-2">Text + 1 iPad (Video) + 1 iPad (Interaction)</p>
-                <p className="text-xs text-gray-600"><span className="font-medium">Body text maximum:</span> 500 characters</p>
               </div>
             </div>
           </div>

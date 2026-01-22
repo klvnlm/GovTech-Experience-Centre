@@ -38,7 +38,7 @@ export function SpacingSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + index * 0.1 }}
-                className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-6 text-center"
+                className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-6 text-center"
               >
                 <p className="text-[36px] text-gray-900 mb-2">{item.distance}</p>
                 <p className="text-gray-700 mb-1">{item.type}</p>
@@ -47,7 +47,7 @@ export function SpacingSection() {
             ))}
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+          <div className="bg-gray-50 dark:bg-gray-900/60 rounded-2xl p-6 border border-gray-200">
             <p className="text-gray-700">
               <span className="font-semibold">Rule of thumb:</span> Viewing distance should be approximately 1.5× to 2× the diagonal dimension of the display for optimal viewing experience.
             </p>
@@ -63,7 +63,7 @@ export function SpacingSection() {
             <p className="text-gray-600">Visitor pathways and accessibility compliance for the 100sqm GovTech Experience Centre (capacity: 20-30 visitors)</p>
           </div>
 
-          <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8">
+          <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-8">
             <h4 className="text-gray-900 text-[24px] mb-6">Pathway Widths</h4>
             
             <div className="space-y-6">
@@ -143,7 +143,7 @@ export function SpacingSection() {
             </motion.div>
           </div>
 
-          <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8">
+          <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-8">
             <h4 className="text-gray-900 text-[20px] mb-4">Lighting Best Practices</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3">
               <p className="text-gray-700 text-sm">• Use LED sources for energy efficiency</p>
@@ -166,7 +166,7 @@ export function SpacingSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8">
+            <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-8">
               <h4 className="text-gray-900 text-[20px] mb-6">Touchscreen Mounting</h4>
               <div className="space-y-4">
                 {[
@@ -183,7 +183,7 @@ export function SpacingSection() {
               </div>
             </div>
 
-            <div className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8">
+            <div className="bg-white/50 dark:bg-gray-900/60 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-2xl p-8">
               <h4 className="text-gray-900 text-[20px] mb-6">Interactive Table Specs</h4>
               <div className="space-y-4">
                 {[

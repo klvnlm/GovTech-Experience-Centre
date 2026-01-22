@@ -28,14 +28,16 @@ export function MobileNav({ currentPage, onNavigate }: MobileNavProps) {
       {/* Hamburger Button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-6 right-6 z-50 backdrop-blur-xl bg-white/40 rounded-2xl border border-white/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] p-3"
+        className="md:hidden fixed top-6 right-6 z-50 backdrop-blur-xl bg-white/40 dark:bg-gray-800/40 rounded-2xl border border-white/60 dark:border-gray-700/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
       >
         {isOpen ? (
-          <X size={24} className="text-gray-700" />
+          <X size={24} className="text-gray-700 dark:text-gray-200" />
         ) : (
-          <Menu size={24} className="text-gray-700" />
+          <Menu size={24} className="text-gray-700 dark:text-gray-200" />
         )}
       </motion.button>
 
@@ -59,7 +61,7 @@ export function MobileNav({ currentPage, onNavigate }: MobileNavProps) {
               exit={{ opacity: 0, y: -20 }}
               className="md:hidden fixed top-20 right-6 left-6 z-50"
             >
-              <div className="backdrop-blur-xl bg-white/40 rounded-3xl border border-white/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] p-4">
+              <div className="backdrop-blur-xl bg-white/40 dark:bg-gray-800/40 rounded-3xl border border-white/60 dark:border-gray-700/60 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] p-4 transition-colors">
                 <nav className="flex flex-col gap-2">
                   {navItems.map((item) => {
                     const Icon = item.icon;
@@ -72,24 +74,27 @@ export function MobileNav({ currentPage, onNavigate }: MobileNavProps) {
                         className={`
                           flex items-center gap-3 px-4 py-3 rounded-2xl
                           transition-all duration-300
+                          focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
                           ${isActive 
-                            ? 'bg-white/60 shadow-[0_4px_16px_0_rgba(0,0,0,0.1)]' 
-                            : 'hover:bg-white/40 active:bg-white/50'
+                            ? 'bg-white/60 dark:bg-gray-700/60 shadow-[0_4px_16px_0_rgba(0,0,0,0.1)]' 
+                            : 'hover:bg-white/40 dark:hover:bg-gray-700/40 active:bg-white/50 dark:active:bg-gray-700/50'
                           }
                         `}
                         whileTap={{ scale: 0.98 }}
+                        aria-label={`Navigate to ${item.label}`}
+                        aria-current={isActive ? 'page' : undefined}
                       >
                         <Icon 
                           size={20} 
                           className={`
                             transition-colors duration-300
-                            ${isActive ? 'text-blue-600' : 'text-gray-600'}
+                            ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-gray-600 dark:text-gray-300'}
                           `}
                         />
                         <span 
                           className={`
                             text-[14px] font-medium transition-colors duration-300
-                            ${isActive ? 'text-gray-900' : 'text-gray-700'}
+                            ${isActive ? 'text-gray-900 dark:text-white' : 'text-gray-700 dark:text-gray-200'}
                           `}
                         >
                           {item.label}
